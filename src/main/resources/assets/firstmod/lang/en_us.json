@@ -1,8 +1,15 @@
 {
   "item.firstmod.black_opal": "Black Opal",
   "item.firstmod.raw_black_opal": "Raw Black Opal",
+
   "block.firstmod.black_opal_block": "Black Opal Block",
   "block.firstmod.raw_black_opal_block": "Raw Black Opal Block",
+
+  "block.firstmod.black_opal_ore": "Black Opal Ore",
+  "block.firstmod.black_opal_nether_ore": "Black Opal Nether Ore",
+  "block.firstmod.black_opal_end_ore": "Black Opal End Ore",
+  "block.firstmod.black_opal_deepslate_ore": "Black Opal Deesplate Ore",
+
   "itemGroup.firstmod.modded_items_tab": "Modded Items",
   "itemGroup.firstmod.modded_blocks_tab": "Modded Blocks",
   "item.firstmod.ember_melon_seeds": "Ember Melon Seeds"
