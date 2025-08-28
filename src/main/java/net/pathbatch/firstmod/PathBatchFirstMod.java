@@ -1,6 +1,7 @@
 package net.pathbatch.firstmod;
 
 import net.minecraft.world.item.CreativeModeTabs;
+import net.pathbatch.firstmod.block.ModBlocks;
 import net.pathbatch.firstmod.item.ModCreativeModeTabs;
 import net.pathbatch.firstmod.item.ModItems;
 import org.slf4j.Logger;
@@ -40,6 +41,7 @@ public class PathBatchFirstMod {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.

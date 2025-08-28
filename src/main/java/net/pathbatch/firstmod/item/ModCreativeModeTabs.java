@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pathbatch.firstmod.PathBatchFirstMod;
+import net.pathbatch.firstmod.block.ModBlocks;
 
 import java.util.function.Supplier;
 
@@ -29,11 +30,11 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> MODDED_BLOCKS_TAB =
             CREATIVE_MODE_TABS.register("modded_blocks_tab", () -> CreativeModeTab.builder()
                             .title(Component.translatable("itemGroup.firstmod.modded_blocks_tab"))
-                            .icon(() -> new ItemStack(ModItems.RAW_BLACK_OPAL.get()))
+                            .icon(() -> new ItemStack(ModBlocks.BLACK_OPAL_BLOCK.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(PathBatchFirstMod.MOD_ID, "modded_items_tab"))
                             .displayItems((pParameters, pOutput) -> {
-                                pOutput.accept(Blocks.STONE);
-                                pOutput.accept(Blocks.CHISELED_COPPER);
+                                pOutput.accept(ModBlocks.BLACK_OPAL_BLOCK);
+                                pOutput.accept(ModBlocks.RAW_BLACK_OPAL_BLOCK);
                             }).build());
 
     public static void register(IEventBus eventBus) {
